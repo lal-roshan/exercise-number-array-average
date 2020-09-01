@@ -40,11 +40,11 @@ namespace NumberAverage
 			string result = "";
 			//Check whether array is empty
 			if(numbers.Length == 0){
-				result = "Array cannot be empty";
+				result = "Array is Empty";
 			}
 			//Check whether all numbers are positive
 			else if(numbers.Any(x => x < 0)){
-				result = "Give proper positive integer values";
+				result = "Negative values in array";
 			}
 			//Calculate average
 			else{
@@ -52,7 +52,7 @@ namespace NumberAverage
 				foreach(int number in numbers){
 					total += number;
 				}
-				result = "The average value is: " + (total/(numbers.Length));
+				result = "The Average is: " + (total/(numbers.Length));
 			}
 			return result;
 		}
